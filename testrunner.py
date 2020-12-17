@@ -13,7 +13,7 @@ tests = loader.discover('.')
 
 testRunner = unittest.runner.TextTestRunner(verbosity=2)
 
-results.testRunner.run(tests)
+results=testRunner.run(tests)
 
 print( "results: %s" % results )
 print( "results.wasSuccessful: %s" % results.wasSuccessful() )
