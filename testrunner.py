@@ -16,7 +16,8 @@ testRunner = unittest.runner.TextTestRunner(verbosity=2)
 
 results=testRunner.run(tests)
 
-print( "results: %s" % results )
-print( "results.wasSuccessful: %s" % results.wasSuccessful() )
+#print( "results: %s" % results )
+#print( "results.wasSuccessful: %s" % results.wasSuccessful() )
+if results.wasSuccessful()==False:
+    sys.exit(1)
 
-sys.exit( not results.wasSuccessful() )
